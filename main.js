@@ -1,4 +1,5 @@
-var arr = [];
+// var arr = [];
+
 var words = [{
         word: "Apostroful (')",
         definition: "Semn ortografic in forma de virgula, care marcheaza absenta accidentala in rostire a unor sunete.",
@@ -91,6 +92,20 @@ var words = [{
     }
 ]
 
+let results = words.filter(function(hello){
+    return hello.language == "Romanian"
+    
+})
+
+function myFunction() {
+    document.getElementById("content").innerHTML = results.filter(word);
+  }
+
+//document.write("here is the word : ", results.toString(), "<br/>")
+
+//console.log(word)
+
+
 
 for (let i = 0; i < words.length; i++) {
     var body = document.getElementById("content");
@@ -114,5 +129,18 @@ for (let i = 0; i < words.length; i++) {
 }
 
 
+// let result = words.filter(language =>language.length < Romanian)
+// console.log(result)
 
 
+
+//document.write("Language: ", words.hello, "<br/>")
+
+
+// find 
+ function checkWords(word){
+     return word >= "Comma Splice"
+ }
+ function myFunction(){
+     document.getElementById("content").innerHTML = words.find(checkWords)
+ }
