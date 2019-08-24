@@ -1,4 +1,9 @@
 # sat-web
+git fetch origin 
+git checkout branch name
+git add .
+git commit  -m ""
+git push 
 
 Branch 1 
 Branch 2
